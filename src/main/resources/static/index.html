@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sleepytime</title>
+    <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages7.alphacoders.com%2F104%2F1047090.jpg&f=1&nofb=1" type="image/icon type">
+</head>
+<style>
+body {
+    background-color: #400080;
+    color: #f2e6ff;
+    font-family: Consolas,monaco,monospace;
+    font-size: 60px;
+}
+</style>
+<script>
+    var currentTime = new Date();
+    currentTime.setMinutes(currentTime.getMinutes() + 450);
+    console.log(currentTime);
+    document.write("Set alarm for " + currentTime.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) + ".");
+</script>
+<body>
+    <div><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages7.alphacoders.com%2F104%2F1047090.jpg&f=1&nofb=1" width="800" height="640"></div>
+</body>
+</html>
